@@ -71,17 +71,21 @@ switch (operation) {
 
 alert("Task 5")
 
-let userAge = prompt("Enter your age")
+let userAge = Number(prompt("Enter your age"))
 
 if (userAge < 12 || userAge > 80){
     alert("Entry is not allowed")
 }else if(userAge >= 18 && userAge < 60){
     alert("Entry is allowed")
-}else{
+}else if((userAge >=12 && userAge < 18) || (userAge >= 60 && userAge <= 80)){
     let isPermittedByAdults = prompt("Do you have adults' permission (Yes, No)")
     if (isPermittedByAdults == "Yes"){
         alert("Entry is allowed")
-    }else{
+    }else if (isPermittedByAdults == "No"){
         alert("Entry is not allowed")
+    }else {
+        alert("Enter 'Yes' or 'No' please")
     }
+}else {
+    alert("Enter the number please")
 }
