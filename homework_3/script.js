@@ -25,8 +25,8 @@ console.log("Ділення: 5 / 10 =", 5 / 10)
 
 // Task 3;
 
-let num1 = prompt("Введіть перше число")
-let num2 = prompt("Введіть друге число")
+let num1 = Number(prompt("Введіть перше число"))
+let num2 = Number(prompt("Введіть друге число"))
 
 if (num1 > num2){
     alert("Число "+ num1 + " більше числа " + num2)
