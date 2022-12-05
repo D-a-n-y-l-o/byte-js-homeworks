@@ -3,10 +3,10 @@
 const a = 5;
 const b = 10;
 
-console.log("Addition: 5 + 10 =", 5 + 10)
-console.log("Subtraction: 5 - 10 =", 5 - 10)
-console.log("Multiplication: 5 * 10 =", 5 * 10)
-console.log("Division: 5 / 10 =", 5 / 10)
+console.log("Addition: 5 + 10 =", a + b)
+console.log("Subtraction: 5 - 10 =", a - b)
+console.log("Multiplication: 5 * 10 =", a * b)
+console.log("Division: 5 / 10 =", a / b)
 
 //Task 2;
 
