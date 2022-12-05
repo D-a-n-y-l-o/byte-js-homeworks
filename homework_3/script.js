@@ -25,6 +25,8 @@ console.log("Division: 5 / 10 =", 5 / 10)
 
 // Task 3;
 
+alert("Task 3")
+
 let num1 = Number(prompt("Enter the first number"))
 let num2 = Number(prompt("Enter the second number"))
 
@@ -37,6 +39,8 @@ if (num1 > num2){
 }
 
 // Task 4;
+
+alert("Task 4")
 
 let number1 = Number(prompt("Enter the first number"))
 let number2 = Number(prompt("Enter the second number"))
@@ -64,6 +68,8 @@ switch (operation) {
 }
 
 // Task 5;
+
+alert("Task 5")
 
 let userAge = prompt("Enter your age")
 
