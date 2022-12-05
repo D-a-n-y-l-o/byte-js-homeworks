@@ -3,10 +3,10 @@
 const a = 5;
 const b = 10;
 
-console.log("Сума: 5 + 10 =", 5 + 10)
-console.log("Різниця: 5 - 10 =", 5 - 10)
-console.log("Множення: 5 * 10 =", 5 * 10)
-console.log("Ділення: 5 / 10 =", 5 / 10)
+console.log("Addition: 5 + 10 =", 5 + 10)
+console.log("Subtraction: 5 - 10 =", 5 - 10)
+console.log("Multiplication: 5 * 10 =", 5 * 10)
+console.log("Division: 5 / 10 =", 5 / 10)
 
 //Task 2;
 
@@ -25,57 +25,57 @@ console.log("Ділення: 5 / 10 =", 5 / 10)
 
 // Task 3;
 
-let num1 = Number(prompt("Введіть перше число"))
-let num2 = Number(prompt("Введіть друге число"))
+let num1 = Number(prompt("Enter the first number"))
+let num2 = Number(prompt("Enter the second number"))
 
 if (num1 > num2){
-    alert("Число "+ num1 + " більше числа " + num2)
+    alert("The number "+ num1 + " is greater than the number " + num2)
 }else if (num1 === num2){
-    alert("Число " + num1 + " дорівнює числу " + num2)
+    alert("The number " + num1 + " is equal to the number " + num2)
 }else{
-    alert("Число " + num1 + " менше числа " + num2)
+    alert("The number " + num1 + " is less than the number " + num2)
 }
 
 // Task 4;
 
-let number1 = prompt("Введіть перше число")
-let number2 = prompt("Введіть друге число")
-let operation = prompt("Введіть бажану математичну дію (+, -, *, /)")
+let number1 = Number(prompt("Enter the first number"))
+let number2 = Number(prompt("Enter the second number"))
+let operation = prompt("Enter the mathematical operation (+, -, *, /)")
 
 switch (operation) {
     case "+":
-        alert("Відповідь: " + (Number(num1) + Number(num2)))
+        alert("Answer: " + (number1 + number2))
     break;
 
     case "-":
-        alert("Відповідь: " + (num1 - num2))
+        alert("Answer: " + (number1 - number2))
     break;
 
     case "*":
-        alert("Відповідь: " + (num1 * num2))
+        alert("Answer: " + (number1 * number2))
     break;
 
     case "/":
-        alert("Відповідь: " + (num1 / num2))
+        alert("Answer: " + (number1 / number2))
     break;
 
     default:
-        alert("Дана математична дія недоступна");
+        alert("This mathematical operation is not available");
 }
 
 // Task 5;
 
-let userAge = prompt("Введіть свій вік")
+let userAge = prompt("Enter your age")
 
 if (userAge < 12 || userAge > 80){
-    alert("Вхід заборонено")
+    alert("Entry is not allowed")
 }else if(userAge >= 18 && userAge < 60){
-    alert("Вхід дозволено")
+    alert("Entry is allowed")
 }else{
-    let isPermittedByAdults = prompt("Чи отримали ви дозвіл дорослих? (Так, Ні)")
-    if (isPermittedByAdults == "Так"){
-        alert("Вхід дозволено")
+    let isPermittedByAdults = prompt("Do you have adults' permission (Yes, No)")
+    if (isPermittedByAdults == "Yes"){
+        alert("Entry is allowed")
     }else{
-        alert("Вхід заборонено")
+        alert("Entry is not allowed")
     }
 }
