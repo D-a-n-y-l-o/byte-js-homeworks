@@ -9,9 +9,8 @@ const PASSWORD = '1q2w3e';
 function authorize () {
     let userLogin;
     let userPassword;
-    let isAuthSuccess = false
 
-    for(x = 0; x < 3; x++) {
+    for(let x = 0; x < 3; x++) {
         userLogin = prompt('Enter login ');
         if (!userLogin){
             alert('Enter login');
@@ -27,7 +26,7 @@ function authorize () {
         } 
         
         
-        if(userLogin === LOGIN || userPassword === PASSWORD){
+        if(userLogin === LOGIN && userPassword === PASSWORD){
             alert('Welcome')
             break;
         } else {
@@ -45,7 +44,7 @@ authorize ()
 alert('Classwork Task 2');
 
 function buildPyramid (height) {
-    for(y = 0; y < height; y++){
+    for(let y = 0; y < height; y++){
         let spacesBefore = '';
         let stars = '';
 
@@ -133,7 +132,7 @@ alert('Homework Task 1 is done')
 
 function getPrimeNumbers (start, end) {
     let primeNumbers = '';
-    for (n = start; n <= end; n++) {
+    for (let n = start; n <= end; n++) {
         let isNotPrime = false
 
         if (n == 0 || n == 1){
