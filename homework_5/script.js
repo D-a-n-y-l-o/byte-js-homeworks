@@ -1,73 +1,73 @@
 // Practice (Lesson):
 // Task 1;
 
-// alert('Classwork Task 1 (Homework Task 3)');
+alert('Classwork Task 1 (Homework Task 3)');
 
-// const LOGIN = 'ADMIN';
-// const PASSWORD = '1q2w3e';
+const LOGIN = 'ADMIN';
+const PASSWORD = '1q2w3e';
 
-// function authorize () {
-//     let userLogin;
-//     let userPassword;
+function authorize () {
+    let userLogin;
+    let userPassword;
 
-//     for(let x = 0; x < 3; x++) {
-//         userLogin = prompt('Enter login ');
-//         if (!userLogin){
-//             alert('Enter login');
-//             alert(`You have ${2 - x} attempt(s) left`);
-//             continue;
-//         }
+    for(let x = 0; x < 3; x++) {
+        userLogin = prompt('Enter login ');
+        if (!userLogin){
+            alert('Enter login');
+            alert(`You have ${2 - x} attempt(s) left`);
+            continue;
+        }
 
-//         userPassword = prompt('Enter password ')
-//         if(!userPassword){
-//             alert('Enter password');
-//             alert(`You have ${2 - x} attempt(s) left`);
-//             continue;
-//         } 
+        userPassword = prompt('Enter password ')
+        if(!userPassword){
+            alert('Enter password');
+            alert(`You have ${2 - x} attempt(s) left`);
+            continue;
+        } 
         
         
-//         if(userLogin === LOGIN && userPassword === PASSWORD){
-//             alert('Welcome')
-//             break;
-//         } else {
-//             alert('The entered data is incorrect');
-//             alert(`You have ${2 - x} attempt(s) left`);
-//             continue;
-//         }
-//     }
-// }
+        if(userLogin === LOGIN && userPassword === PASSWORD){
+            alert('Welcome')
+            break;
+        } else {
+            alert('The entered data is incorrect');
+            alert(`You have ${2 - x} attempt(s) left`);
+            continue;
+        }
+    }
+}
 
-// authorize ()
+authorize ()
 
-// // Task 2;
+// Task 2;
 
-// alert('Classwork Task 2');
+alert('Classwork Task 2');
 
-// function buildPyramid (height) {
-//     for(let y = 0; y < height; y++){
-//         let spacesBefore = '';
-//         let stars = '';
+function buildPyramid (height) {
+    for(let y = 0; y < height; y++){
+        let spacesBefore = '';
+        let stars = '';
 
-//         for(h = 0; h < 2 * y + 1; h++){
-//             stars += '*';
-//         }
+        for(h = 0; h < 2 * y + 1; h++){
+            stars += '*';
+        }
 
-//         for(g = 0; g < height - y - 1; g++){
-//             spacesBefore += ' ';
-//         }
+        for(g = 0; g < height - y - 1; g++){
+            spacesBefore += ' ';
+        }
 
-//         console.log(spacesBefore + stars);
-//     }
-// }
+        console.log(spacesBefore + stars);
+    }
+}
 
-// let desiredHeight = Number(prompt('Enter the height'))
+let desiredHeight = Number(prompt('Enter the height'))
 
-// buildPyramid (desiredHeight)
+buildPyramid (desiredHeight)
 
-// alert('Pyramid is built')
+alert('Pyramid is built')
 
 
-//Homework:
+// Homework:
 // Task 1;
 
 alert('Homework Task 1')
@@ -124,38 +124,66 @@ do {
     m--
 } while (m >= 10);
 
-// // Task 2;
+alert('Homework Task 1 is done')
 
-// alert('Homework Task 1 is done')
+// Task 2;
 
-// function getPrimeNumbers (start, end) {
-//     primeNumbers:
-//     for (let n = start; n <= end; n++) {
-//         let isNotPrime = false
+alert('Homework Task 2')
 
-//         if (n == 0 || n == 1){
-//             continue;
-//         } else if(n > 1){
+function getPrimeNumbers (start, end) {
+    let primeNumbers = '';
+    for (let n = start; n <= end; n++) {
+        let isNotPrime = false
+
+        if (n == 0 || n == 1){
+            continue;
+        } else if(n > 1){
             
-//             for(l = 2; l < n; l++){
-//                 if(n % l == 0){
-//                     isNotPrime = true;
-//                     break; 
-//                 }
+            for(l = 2; l < n; l++){
+                if(n % l == 0){
+                    isNotPrime = true;
+                    break; 
+                }
 
-//             }
+            }
 
-//             if(isNotPrime == false){
-//                 primeNumbers = primeNumbers + String(n) + ' ';
-//             }
-//         }
-//     }
+            if(isNotPrime == false){
+                primeNumbers = primeNumbers + String(n) + ' ';
+            }
+        }
+    }
 
-//     return primeNumbers
-// }
+    return primeNumbers
+}
 
-// let result = getPrimeNumbers(prompt('Enter the first number'), prompt('Enter the last number'))
+let result = getPrimeNumbers(prompt('Enter the first number'), prompt('Enter the last number'))
 
-// alert(`Your prime Number(s) are: ${result}`)
+alert(`Your prime Number(s) are: ${result}`);
 
+// Task 2 with label;
 
+alert('Homework Task 2 with label');
+
+function listPrimeNumbers (start, end) {
+    
+    newPrimeNumber:
+    for (let n = start; n <= end; n++) {
+
+        if (n == 0 || n == 1){
+            continue  newPrimeNumber;
+        } else if(n > 1){
+            
+            for(l = 2; l < n; l++){
+                if(n % l == 0){
+                    continue  newPrimeNumber;
+                }
+            }
+
+            console.log(n)
+        }
+    }
+}
+
+console.log('The prime numbers are');
+
+let res = listPrimeNumbers(prompt('Enter the first number'), prompt('Enter the last number'));
