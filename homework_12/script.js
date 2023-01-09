@@ -1,7 +1,5 @@
 const button = document.getElementById('toolTip-button');
 
-createTooltip(button, 'example toolTip');
-
 function createTooltip(elem, text){
     let elemCoordinateLeft = elem.offsetLeft;
 
@@ -14,8 +12,24 @@ function createTooltip(elem, text){
     toolTipContainer.style.top = `70px`;
     toolTipContainer.style.left = `${elemCoordinateLeft}px`;
 
+    toolTipContainer.classList.add('toolTip-hide');
+
+    toolTipContainer.id = 'toolTip';
+
     document.body.append(toolTipContainer);
 
     return;
 }
+
+function toggleClass () {
+    let elem = document.getElementById('toolTip')
+    elem.classList.toggle('toolTip-hide')
+    console.log(elem);
+}
+
+createTooltip(button, 'example toolTip');
+
+
+button.addEventListener('mouseenter', toggleClass );
+button.addEventListener('mouseleave', toggleClass )
 
